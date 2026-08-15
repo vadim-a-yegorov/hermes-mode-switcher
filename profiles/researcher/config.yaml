@@ -1,0 +1,6 @@
+model:
+  default: deepseek/deepseek-v4-pro
+  provider: openrouter
+onboarding:
+  seen:
+    tool_progress_prompt: true

@@ -1,0 +1,6 @@
+model:
+  default: anthropic/claude-sonnet-5
+  provider: openrouter
+onboarding:
+  seen:
+    tool_progress_prompt: true
