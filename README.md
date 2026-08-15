@@ -1,6 +1,10 @@
 # hermes-mode-switcher
 
-Perplexity-style mode selector for the Hermes desktop app. Adds an `Auto | Research | Computer` segmented control next to the send button.
+Mode selector for the Hermes desktop app.  
+
+Adds `Auto`, `Deep Research` mode and `Computer` mode.
+
+![](Auto_Research_Computer.png "Auto | Research | Computer")
 
 ## Install
 
