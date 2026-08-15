@@ -24,7 +24,9 @@ Adds `Auto`, `Deep Research` mode and `Computer` mode.
    cp hermes-mode-switcher/personalities/computer.yaml ~/.hermes/personalities/
    ```
 
-3. Register both personalities in `~/.hermes/config.yaml` under `agent.personalities`:
+3. Register personalities in `~/.hermes/config.yaml`:
+
+   Edit `~/.hermes/config.yaml`:
 
    ```yaml
    agent:
@@ -33,15 +35,16 @@ Adds `Auto`, `Deep Research` mode and `Computer` mode.
        - computer
    ```
 
-   or run:
+   OR run:
 
    ```bash
    yq -i '.agent.personalities += ["research-deep", "computer"]' ~/.hermes/config.yaml
    ```
 
-4. Create the four sub-agent profiles the `computer` personality dispatches to, and copy each profile's `config.yaml` + `SOUL.md`:
+4. Create the four sub-agent profiles:
 
    ```bash
+   mkdir -p ~/.hermes/profiles/{researcher,executor,operator,verifier}
    cp -r hermes-mode-switcher/profiles/* ~/.hermes/profiles/
    ```
 
